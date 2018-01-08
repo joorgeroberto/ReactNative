@@ -17,12 +17,12 @@ Commands:
 
 - Creating a new project:
 	$ react-native init [project name]
-	Exemple: $ react-native init DetalhesApp
+	Example: $ react-native init DetalhesApp
 	OBS: Istall the yarn will make the creation faster. 
 
 - Creating a new project with a specific version of the React Native:
 	$ react-native init -- version [version number] [project name]
-	Exemple: $ react-native init --version 0.47.0 DetalhesApp
+	Example: $ react-native init --version 0.47.0 DetalhesApp
 
 - Generating a signed APK: 'https://facebook.github.io/react-native/docs/signed-apk-android.html'
 	1 - Generate the key 
