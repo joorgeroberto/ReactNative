@@ -1,20 +1,21 @@
 import React from 'react'
 
 import {
-        Image,
-        Text,
-        TouchableOpacity,
-        View,
-        StyleSheet,
-        Platform,
-        StatusBar
+    Image,
+    Text,
+    TouchableOpacity,
+    View,
+    StyleSheet,
+    Platform,
+    StatusBar
 } from 'react-native'
 
-const Header = (props) => {
+const TextButton = (props) => {
     return (
-        <View style = {styles.container}>
+        <View
+            style = {styles.container}>
             <StatusBar backgroundColor='white' />
-            <Text style = {styles.title}>{props.title}</Text>
+
 
             <TouchableOpacity
                 onPress={props.onPress}
@@ -22,7 +23,9 @@ const Header = (props) => {
                 <Image
                     style={styles.icon}
                     source={props.icon} />
+                <Text style = {styles.text}>{props.text}</Text>
             </TouchableOpacity>
+
 
         </View>
     )
@@ -33,34 +36,37 @@ const styles = StyleSheet.create({//Estiliza o app. Adiciona CSS
         //backgroundColor: 'red',
         flexDirection: 'row',
         alignItems: 'center',
-        ...Platform.select({//Seleciona a plataforma para comecar em baixo se for IOS. Se for android nao precisa baixar pq no padrao ja fica embaixo
-            ios:{
-                paddingTop: 20
-            }
-        })
+        left:15
     },
     iconContainer:{
         //backgroundColor: 'red',
+        flexDirection: 'row',
+        alignItems: 'center',
         //Onde tem Status bar: <StatusBar translucent />
-        paddingHorizontal: 15,
-        paddingVertical: 20,
+        //paddingHorizontal: 8,
+        paddingVertical: 10,
+        //left:8,
+        //position: 'absolute',
 
     },
     icon: {
         tintColor: '#19B89D',//Cor de uma imagem
     },
-    title: {
+    text: {
         //backgroundColor: 'blue',
-        position: 'absolute',
-        top: 15,
+        //position: 'absolute',
+        paddingHorizontal: 8,
+        top: 0,
         bottom: 0,
         left: 0,
-        right: 0,
-        fontSize: 20,//Tamanho da fonte
-        fontWeight: '900',//Peso da fonte (Negrito)
-        color: '#18203F',//Cor da fonte
-        textAlign: 'center'
+        right: 50,
+        fontSize: 17,//Tamanho da fonte
+        //fontWeight: '900',//Peso da fonte (Negrito)
+        color: '#19B89D',//Cor da fonte
+        //textAlign: 'left'
     }
 
 })
-export default Header
+
+export default TextButton
+
