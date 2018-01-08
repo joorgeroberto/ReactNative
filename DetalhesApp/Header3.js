@@ -40,7 +40,7 @@ const styles = StyleSheet.create({//Estiliza o app. Adiciona CSS
         //backgroundColor: 'green',
         flexDirection: 'column',
         alignItems: 'center',
-        paddingVertical:50,
+        paddingVertical:65,
     },
     iconContainer:{
         //backgroundColor: 'red',

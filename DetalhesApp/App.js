@@ -3,7 +3,7 @@ import {View, Alert, Platform, StyleSheet,ScrollView} from 'react-native'
 import Header from "./Header";
 import Food_Image from "./Food_Image";
 import Header2 from "./Header2";
-import Informacoes from "./Informacoes";
+import Information from "./Information";
 import TextButton from "./TextButton";
 import Header3 from "./Header3";
 
@@ -18,7 +18,7 @@ export default class App extends Component {
   onPressAlert=()=>{
       Alert.alert('Alerta ativado')
   }
-  onPressAlert=()=>{
+  onPressLocation=()=>{
       Alert.alert('Como chegar')
   }
   render () {
@@ -46,16 +46,16 @@ export default class App extends Component {
                     text={'Ativar alerta'}
 
                 />
-                <Informacoes
+                <Information
                     icon={require('./Assets/watch-icon.png')}
                     text={'Quinta-feira, 14 de janeiro\n19:00 até 22:00'}
                 />
-                <Informacoes
+                <Information
                     icon={require('./Assets/pin-icon.png')}
                     text={' Local: Assis (em frente ao Espaço Emes)'}
                 />
                 <TextButton
-                    onPress={this.onPressAlert}
+                    onPress={this.onPressLocation}
                     icon={require('./Assets/location-icon.png')}
                     text={'  Como chegar'}
 
