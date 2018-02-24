@@ -34,3 +34,5 @@ Commands:
 		'/[project name]/android/app/build/outputs/apk/app-release.apk'
 	5 - Running the signed apk in the emulator or connected phone.
 		$ react-native run-android --variant=release
+- Solving the issue: Unable to load script from assets index.android.bundle...
+	'https://stackoverflow.com/questions/44446523/unable-to-load-script-from-assets-index-android-bundle-on-windows/44476757#44476757'
