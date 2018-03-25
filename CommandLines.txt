@@ -37,6 +37,9 @@ Commands:
 - Solving the issue: Unable to load script from assets index.android.bundle...
 	'https://stackoverflow.com/questions/44446523/unable-to-load-script-from-assets-index-android-bundle-on-windows/44476757#44476757'
 
+- Solving the issue for react-native start: ERROR  watch /home/jorge/Documentos/ReactNativeProjects/AprendendoMapa/node_modules/dateformat ENOSPC 
+	'https://github.com/facebook/react-native/issues/10188'
+
 - Using Maps:
 	'https://github.com/react-community/react-native-maps/blob/master/docs/installation.md'
 	'https://github.com/react-community/react-native-maps'
